@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class Assign5
+public class Assign5_1
 {
    // Static for 57 icons and their corresponding labels
    // normally we would not have a separate label for each card, but
