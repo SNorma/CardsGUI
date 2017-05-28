@@ -118,11 +118,21 @@ class Card
    private char value;
    private Suit suit;
    private boolean errorFlag;
+   
+    //Card values 'X' for a joker 
+   public static char[] cardValues = {'A', '2', '3', '4', '5', '6', '7', '8',
+         '9', 'T', 'J', 'Q', 'K', 'X'};
+
+   // Order the card values with smallest first
+   public static char[] valueRanks = {'2', '3', '4', '5', '6', '7', '8', '9',
+         'T', 'J', 'Q', 'K', 'A', 'X'};
+
 
    // Default Constructor
    Card()
    {
       set( 'A', Suit.SPADES );
+      errorFlag = false;
    }
 
    // Constructor
